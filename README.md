@@ -8,13 +8,9 @@ I simulated a quantum circuit with two qubits and two classical bits. The idea w
 
 ## Pulse Sequence
 
-1. A $\pi/2$ rotation around the x-axis is applied to both spins to prepare transverse magnetization:
-
-$$
-R_x\left(\frac{\pi}{2}\right) = e^{-i \frac{\pi}{2} I_x }.
-$$
-
-2. The system evolves under a Hamiltonian containing chemical shifts and isotropic J-coupling:
+1. A $\pi/2$ rotation around the x-axis is applied to both spins to prepare transverse magnetization.
+   
+3. The system evolves under a Hamiltonian containing chemical shifts and isotropic J-coupling:
 
 $$
 H = \hbar \omega_H I_{z}^{(H)} + \hbar \omega_C I_{z}^{(C)} 
