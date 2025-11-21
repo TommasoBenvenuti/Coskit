@@ -32,21 +32,21 @@ which corresponds to the mixing period in a COSY-like experiment.
 ---
 # 1. Initial State
 
-For a two-spin-½ system, the initial state is
+For a two-spin-½ system, the initial state is:
 
-\[
-|\psi _0\rangle = |s_1\rangle \otimes |s_2\rangle ,
-\]
+$$
+|\psi _0 \rangle = |s_1\rangle \otimes |s_2\rangle 
+$$
 
-where each single-spin state is a 2-component vector (e.g. eigenstates of \(I_z\)).
+where each single-spin state is a 2-component vector (e.g. eigenstates of $\(I_z\)$).
 Thus the full Hilbert space is 4-dimensional, and all operators are constructed as Kronecker products of single-spin operators.
 
 ---
 
 # 2. Pulse as a Rotation
 
-A pulse acting on spin \(k\) corresponds to a rotation operator \(R^{(k)}(\theta,\hat{n})\) acting only on that spin:
-
+A pulse acting on spin $\(k\)$ corresponds to a rotation operator $\(R^{(k)}(\theta,\hat{n})\)$ acting only on that spin:
+$$
 \[
 R^{(k)} =
 \begin{cases}
@@ -54,13 +54,13 @@ R(\theta ,\hat{n}) \otimes \mathbb{I}, & k = H, \\
 \mathbb{I} \otimes R(\theta ,\hat{n}), & k = C,
 \end{cases}
 \]
-
+$$
 where
-
+$$
 \[
 R(\theta ,\hat{n}) = e^{-i\,\theta \, \hat{n}\cdot\vec{I}}.
 \]
-
+$$
 The full rotation is again a \(4 \times 4\) operator constructed by Kronecker products.
 
 ---
@@ -68,17 +68,17 @@ The full rotation is again a \(4 \times 4\) operator constructed by Kronecker pr
 # 3. Density Matrix Evolution
 
 After the pulse, the system evolves freely under the Hamiltonian:
-
+$$
 \[
 \rho_ {\text{final}} = U(t_1)\, \rho _0 \, U^\dagger(t_1)
 \]
-
+$$
 with
-
+$$
 \[
 U(t_1) = e^{-i H t_1 / \hbar}.
 \]
-
+$$
 This is the standard unitary time evolution for closed quantum systems.
 
 ---
