@@ -17,7 +17,7 @@ $$
 H = \hbar \omega _H I_{z}^{(H)} + \hbar \omega _C I_{z}^{(C)}  + 2\pi J \left(\hat{I}^{(C)}\cdot  \hat{I}^{(H)}\right)
 $$
 
-where $I_\alpha^{(H/C)}$ are the spin operators of hydrogen and carbon along $\alpha = x, y, z$.
+where $I_\alpha ^{(H/C)}$ are the spin operators of hydrogen and carbon along $\alpha = x, y, z$.
 
 3. The evolution time is chosen as:
 
@@ -35,7 +35,7 @@ which corresponds to the mixing period in a COSY-like experiment.
 For a two-spin-½ system, the initial state is
 
 \[
-|\psi_0\rangle = |s_1\rangle \otimes |s_2\rangle ,
+|\psi _0\rangle = |s_1\rangle \otimes |s_2\rangle ,
 \]
 
 where each single-spin state is a 2-component vector (e.g. eigenstates of \(I_z\)).
@@ -58,7 +58,7 @@ R(\theta,\hat{n}) \otimes \mathbb{I}, & k = H, \\
 where
 
 \[
-R(\theta,\hat{n}) = e^{-i\,\theta\, \hat{n}\cdot\vec{I}}.
+R(\theta ,\hat{n}) = e^{-i\,\theta \, \hat{n}\cdot\vec{I}}.
 \]
 
 The full rotation is again a \(4 \times 4\) operator constructed by Kronecker products.
@@ -70,7 +70,7 @@ The full rotation is again a \(4 \times 4\) operator constructed by Kronecker pr
 After the pulse, the system evolves freely under the Hamiltonian:
 
 \[
-\rho_{\text{final}} = U(t_1)\, \rho_0 \, U^\dagger(t_1)
+\rho_ {\text{final}} = U(t_1)\, \rho _0 \, U^\dagger(t_1)
 \]
 
 with
