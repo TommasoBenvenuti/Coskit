@@ -13,12 +13,8 @@ I simulated a quantum circuit with two qubits and two classical bits. The idea w
 3. The system evolves under a Hamiltonian containing chemical shifts and isotropic J-coupling:
 
 $$
-H = \hbar \omega_H I_{z}^{(H)} + \hbar \omega_C I_{z}^{(C)} 
-+ 2\pi J \left(
-I_x^{(H)} I_x^{(C)} 
-+ I_y^{(H)} I_y^{(C)} 
-+ I_z^{(H)} I_z^{(C)}
-\right)
+
+H = \hbar \omega_H I_{z}^{(H)} + \hbar \omega_C I_{z}^{(C)}  + 2\pi J \left(I_x^{(H)} I_x^{(C)} + I_y^{(H)} I_y^{(C)} + I_z^{(H)} I_z^{(C)}\right)
 $$
 
 where $I_\alpha^{(H/C)}$ are the spin operators of hydrogen and carbon along $\alpha = x, y, z$.
