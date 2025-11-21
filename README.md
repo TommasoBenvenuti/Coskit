@@ -55,10 +55,10 @@ R(\theta ,\hat{n}) \otimes \mathbb{I}, & k = H, \\
 \end{cases}
 $$
 
-where:
+where, for example, rotation along x-axis is described as:
 
 $$
-R(\theta) =
+R_{x}(\theta) =
 \begin{pmatrix}
 cos(\theta / 2)  & -i sin(\theta / 2) \\ 
  -i sin(\theta /2) & cos(\theta / 2) 
