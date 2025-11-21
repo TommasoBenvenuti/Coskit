@@ -74,7 +74,7 @@ The full rotation is again a \(4 \times 4\) operator constructed by Kronecker pr
 After the pulse, the system evolves freely under the Hamiltonian:
 
 $$
-\rho_ {\text{final}} = U(t_1)\, \rho _0 \, U^\dagger(t_1)
+\rho_ {\text{final}} = U(t_1) \cdot \rho _0 \cdot U^\dagger(t_1)
 $$
 
 with:
