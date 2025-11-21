@@ -10,10 +10,10 @@ from qiskit.visualization import plot_bloch_multivector, plot_histogram
 # =========================
 # Parametri
 # =========================
-w1 = 1     # frequenza Larmor primo qubit  1/s, 500 MHz
-w2 = w1 / 4        # frequenza Larmor secondo qubit ovvero del carbonio 13C  1/s
-J = 1   # accoppiamento J in Hz (1/s)
-t1 = 1 / (2*J)      # tempo evoluzione
+w1 = 1          # frequenza Larmor primo qubit  1/s, unità scalate
+w2 = w1 / 4     # frequenza Larmor secondo qubit ovvero del carbonio 13C, circa un quarto del protone
+J = 1           # accoppiamento J in unità scalate
+t1 = 1 / (2*J)  # tempo evoluzione
 
 # =========================
 # Inizializzazione circuito
