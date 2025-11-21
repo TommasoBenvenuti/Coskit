@@ -46,6 +46,7 @@ Thus the full Hilbert space is 4-dimensional, and all operators are constructed 
 # 2. Pulse as a Rotation
 
 A pulse acting on spin $\(k\)$ corresponds to a rotation operator $\(R^{(k)}(\theta,\hat{n})\)$ acting only on that spin:
+
 $$
 \[
 R^{(k)} =
@@ -55,12 +56,15 @@ R(\theta ,\hat{n}) \otimes \mathbb{I}, & k = H, \\
 \end{cases}
 \]
 $$
-where
+
+where:
+
 $$
 \[
 R(\theta ,\hat{n}) = e^{-i\,\theta \, \hat{n}\cdot\vec{I}}.
 \]
 $$
+
 The full rotation is again a \(4 \times 4\) operator constructed by Kronecker products.
 
 ---
