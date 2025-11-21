@@ -58,8 +58,10 @@ $$
 where:
 
 $$
-R(\theta) = \pmatrix cos(\theta / 2)  & -i sin(\theta / 2) \\ - i sin(\theta /2) & cos(\theta / 2) $
-
+R(\theta) =
+\begin{pmatrix}
+cos(\theta / 2)  & -i sin(\theta / 2) \\ - i sin(\theta /2) & cos(\theta / 2) 
+\end{pmatrix}
 $$
 
 The full rotation is again a \(4 \times 4\) operator constructed by Kronecker products.
