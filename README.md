@@ -50,8 +50,8 @@ A pulse acting on spin \(k\) corresponds to a rotation operator \(R^{(k)}(\theta
 \[
 R^{(k)} =
 \begin{cases}
-R(\theta,\hat{n}) \otimes \mathbb{I}, & k = H, \\
-\mathbb{I} \otimes R(\theta,\hat{n}), & k = C,
+R(\theta ,\hat{n}) \otimes \mathbb{I}, & k = H, \\
+\mathbb{I} \otimes R(\theta ,\hat{n}), & k = C,
 \end{cases}
 \]
 
