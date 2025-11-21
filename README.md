@@ -8,6 +8,7 @@ I simulated a quantum circuit with two qubits and two classical bits. The idea w
 
 ## Pulse Sequence
 
+
 1. A $\pi/2$ rotation around the x-axis is applied to both spins to prepare transverse magnetization.
    
 2. The system evolves under a Hamiltonian containing chemical shifts and isotropic J-coupling:
@@ -29,39 +30,59 @@ which corresponds to the mixing period in a COSY-like experiment.
 4. Another $\pi/2$ rotation around the x-axis is applied to both spins at the end of the sequence.
 
 ---
+# 1. Initial State
 
-## Density Matrix and Observables
+For a two-spin-½ system, the initial state is
 
-After the pulse, the density matrix evolves folowing this equation:
+\[
+|\psi_0\rangle = |s_1\rangle \otimes |s_2\rangle ,
+\]
 
-$$
-\rho_{\text{final}} =  U(t_1)\ \cdot \rho_0 \cdot U^\dagger(t_1) 
-$$
+where each single-spin state is a 2-component vector (e.g. eigenstates of \(I_z\)).
+Thus the full Hilbert space is 4-dimensional, and all operators are constructed as Kronecker products of single-spin operators.
+
+---
+
+# 2. Pulse as a Rotation
+
+A pulse acting on spin \(k\) corresponds to a rotation operator \(R^{(k)}(\theta,\hat{n})\) acting only on that spin:
+
+\[
+R^{(k)} =
+\begin{cases}
+R(\theta,\hat{n}) \otimes \mathbb{I}, & k = H, \\
+\mathbb{I} \otimes R(\theta,\hat{n}), & k = C,
+\end{cases}
+\]
+
+where
+
+\[
+R(\theta,\hat{n}) = e^{-i\,\theta\, \hat{n}\cdot\vec{I}}.
+\]
+
+The full rotation is again a \(4 \times 4\) operator constructed by Kronecker products.
+
+---
+
+# 3. Density Matrix Evolution
+
+After the pulse, the system evolves freely under the Hamiltonian:
+
+\[
+\rho_{\text{final}} = U(t_1)\, \rho_0 \, U^\dagger(t_1)
+\]
 
 with
 
-$$
+\[
 U(t_1) = e^{-i H t_1 / \hbar}.
-$$
+\]
 
-The measurable magnetization components can be computed as:
-
-$$
-M_\alpha^{(H)} = \mathrm{Tr}\left( \rho_{\text{final}}\, I_\alpha^{(H)} \right), 
-\qquad
-M_\alpha^{(C)} = \mathrm{Tr}\left( \rho_{\text{final}}\, I_\alpha^{(C)} \right),
-$$
-
-with $\alpha = x, y, z$.  
-
-In Qiskit, these measurements are represented as counts on classical bits — not a true FID, but enough to inspect how the system evolves under the pulse sequence.
+This is the standard unitary time evolution for closed quantum systems.
 
 ---
 
-## References / Notes
+# 4. Observable Magnetization
 
-- $\pi/2$ pulses create transverse magnetization along the chosen axis.  
-- The J-coupling term allows coherence transfer between spins in COSY.  
-- This is a **very simplified model** for illustrative purposes in quantum simulation.
-
----
+It is not recorded a FID, but the final state is studied by counts on two classical bits. For this reason, the model is very simple
