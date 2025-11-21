@@ -48,21 +48,17 @@ Thus the full Hilbert space is 4-dimensional, and all operators are constructed 
 A pulse acting on spin $\(k\)$ corresponds to a rotation operator $\(R^{(k)}(\theta,\hat{n})\)$ acting only on that spin:
 
 $$
-\[
 R^{(k)} =
 \begin{cases}
 R(\theta ,\hat{n}) \otimes \mathbb{I}, & k = H, \\
 \mathbb{I} \otimes R(\theta ,\hat{n}), & k = C,
 \end{cases}
-\]
 $$
 
 where:
 
 $$
-\[
 R(\theta ,\hat{n}) = e^{-i\,\theta \, \hat{n}\cdot\vec{I}}.
-\]
 $$
 
 The full rotation is again a \(4 \times 4\) operator constructed by Kronecker products.
@@ -73,16 +69,15 @@ The full rotation is again a \(4 \times 4\) operator constructed by Kronecker pr
 
 After the pulse, the system evolves freely under the Hamiltonian:
 $$
-\[
 \rho_ {\text{final}} = U(t_1)\, \rho _0 \, U^\dagger(t_1)
-\]
 $$
-with
+
+with:
+
 $$
-\[
 U(t_1) = e^{-i H t_1 / \hbar}.
-\]
 $$
+
 This is the standard unitary time evolution for closed quantum systems.
 
 ---
