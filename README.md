@@ -60,7 +60,8 @@ where:
 $$
 R(\theta) =
 \begin{pmatrix}
-cos(\theta / 2)  & -i sin(\theta / 2) \\ - i sin(\theta /2) & cos(\theta / 2) 
+cos(\theta / 2)  & -i sin(\theta / 2) \\ 
+- i sin(\theta /2) & cos(\theta / 2) 
 \end{pmatrix}
 $$
 
