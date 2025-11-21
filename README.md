@@ -58,7 +58,8 @@ $$
 where:
 
 $$
-R(\theta ,\hat{n}) = e^{-i\ \theta \hat{n}\cdot\vec{I}}.
+R(\theta) = \pmatrix cos(\theta / 2)  & -i sin(\theta / 2) \\ - i sin(\theta /2) & cos(\theta / 2) $
+
 $$
 
 The full rotation is again a \(4 \times 4\) operator constructed by Kronecker products.
