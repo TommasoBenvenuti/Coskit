@@ -13,12 +13,12 @@ I simulated a quantum circuit with two qubits and two classical bits. The idea w
 3. The system evolves under a Hamiltonian containing chemical shifts and isotropic J-coupling:
 
 $$
-H = \hbar \omega_H I_{z}^{(H)} + \hbar \omega_C I_{z}^{(C)} 
+H = h \omega_H I_{z}^{(H)} + \hbar \omega_C I_{z}^{(C)} 
 + 2\pi J \left(
 I_x^{(H)} I_x^{(C)} 
 + I_y^{(H)} I_y^{(C)} 
 + I_z^{(H)} I_z^{(C)}
-\right),
+\right)
 $$
 
 where $I_\alpha^{(H/C)}$ are the spin operators of hydrogen and carbon along $\alpha = x, y, z$.
@@ -37,10 +37,10 @@ which corresponds to the mixing period in a COSY-like experiment.
 
 ## Density Matrix and Observables
 
-The final density matrix is:
+After the pulse, the density matrix evolves folowing this equation:
 
 $$
-\rho_{\text{final}} = U_{\text{pulse}} \, U(t_1)\, \rho_0\, U^\dagger(t_1) \, U_{\text{pulse}}^\dagger,
+\rho_{\text{final}} =  U(t_1)\ \cdot \rho_0 \cdot U^\dagger(t_1) 
 $$
 
 with
