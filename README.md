@@ -72,6 +72,7 @@ The full rotation is again a \(4 \times 4\) operator constructed by Kronecker pr
 # 3. Density Matrix Evolution
 
 After the pulse, the system evolves freely under the Hamiltonian:
+
 $$
 \rho_ {\text{final}} = U(t_1)\, \rho _0 \, U^\dagger(t_1)
 $$
